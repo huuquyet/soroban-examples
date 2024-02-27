@@ -1,18 +1,16 @@
-[package]
-name = "soroban-single-offer-contract"
+[workspace]
+resolver = "2"
+
+members = [
+    "contract_a",
+    "contract_b",
+]
+
+[workspace.package]
 version = "0.0.0"
-edition = "2021"
-rust-version = "1.76.0"
-publish = false
 
-[lib]
-crate-type = ["cdylib"]
-
-[dependencies]
+[workspace.dependencies]
 soroban-sdk = { version = "20.3.2" }
-
-[dev_dependencies]
-soroban-sdk = { version = "20.3.2", features = ["testutils"] }
 
 [profile.release]
 opt-level = "z"
@@ -27,4 +25,3 @@ lto = true
 [profile.release-with-logs]
 inherits = "release"
 debug-assertions = true
-

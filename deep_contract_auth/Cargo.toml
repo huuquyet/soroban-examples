@@ -1,10 +1,10 @@
 [package]
-name = "soroban-deployer-contract"
+name = "soroban-deep-contract-auth"
 version = "0.0.0"
 authors = ["Stellar Development Foundation <info@stellar.org>"]
 license = "Apache-2.0"
 edition = "2021"
-rust-version = "1.75.0"
+rust-version = "1.76.0"
 publish = false
 
 [lib]
@@ -12,10 +12,10 @@ crate-type = ["cdylib"]
 doctest = false
 
 [dependencies]
-soroban-sdk = { version = "20.1.0" }
+soroban-sdk = { version = "20.3.2" }
 
 [dev_dependencies]
-soroban-sdk = { version = "20.1.0", features = ["testutils"] }
+soroban-sdk = { version = "20.3.2", features = ["testutils"] }
 
 [profile.release]
 opt-level = "z"
