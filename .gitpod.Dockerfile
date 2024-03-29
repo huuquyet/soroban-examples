@@ -2,8 +2,7 @@
 FROM gitpod/workspace-full:2024-01-10-10-45-39
 
 RUN mkdir -p ~/.local/bin
-
-RUN curl -L https://github.com/stellar/soroban-tools/releases/download/v20.2.0/soroban-cli-20.2.0-x86_64-unknown-linux-gnu.tar.gz | tar xz -C ~/.local/bin soroban
+RUN curl -L https://github.com/stellar/soroban-tools/releases/download/v20.3.0/soroban-cli-20.3.0-x86_64-unknown-linux-gnu.tar.gz | tar xz -C ~/.local/bin soroban
 RUN chmod +x ~/.local/bin/soroban
 RUN echo "source <(soroban completion --shell bash)" >> ~/.bashrc
 
