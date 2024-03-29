@@ -4,7 +4,7 @@ version.workspace = true
 authors = ["Stellar Development Foundation <info@stellar.org>"]
 license = "Apache-2.0"
 edition = "2021"
-rust-version = "1.74.0"
+rust-version = "1.76.0"
 publish = false
 
 [lib]
@@ -12,7 +12,7 @@ crate-type = ["cdylib", "rlib"]
 doctest = false
 
 [features]
-testutils = []
+testutils = ["soroban-sdk/testutils"]
 
 [dependencies]
 soroban-sdk = { workspace = true }
