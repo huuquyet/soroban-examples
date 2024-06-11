@@ -15,3 +15,6 @@ fmt:
 
 clean:
 	cargo clean
+
+update:
+	cargo update

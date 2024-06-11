@@ -24,3 +24,8 @@ clean:
 	@for dir in $(SUBDIRS) ; do \
 		$(MAKE) -C $$dir clean || exit 1; \
 	done
+
+update:
+	@for dir in $(SUBDIRS) ; do \
+		$(MAKE) -C $$dir update || exit 1; \
+	done

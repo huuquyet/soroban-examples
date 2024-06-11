@@ -8,10 +8,10 @@ members = [
 ]
 
 [workspace.package]
-version = "0.0.0"
+version = "0.1.0"
 
 [workspace.dependencies]
-soroban-sdk = { version = "20.3.1" }
+soroban-sdk = { version = "20.5.0" }
 soroban-workspace-contract-a-interface = { path = "contract_a_interface" }
 soroban-workspace-contract-a = { path = "contract_a" }
 
